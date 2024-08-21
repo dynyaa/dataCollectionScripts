@@ -1,7 +1,7 @@
 function flipMp4Files(folderPath)
     files = dir(fullfile(folderPath, '*.mp4'));
     
-    % Process each mp4 file
+
     for i = 1:length(files)
         inputFile = fullfile(folderPath, files(i).name);
         [~, name, ext] = fileparts(inputFile);
